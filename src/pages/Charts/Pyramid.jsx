@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react";
 import {
   AccumulationChartComponent,
@@ -15,14 +14,6 @@ import {
 import { PyramidData } from "../../data/dummy";
 import { useStateContext } from "../../contexts/ContextProvider";
 import { ChartsHeader } from "../../components";
-=======
-import React from 'react';
-import { AccumulationChartComponent, AccumulationSeriesCollectionDirective, AccumulationSeriesDirective, Inject, AccumulationLegend, AccumulationDataLabel, AccumulationTooltip, PyramidSeries, AccumulationSelection } from '@syncfusion/ej2-react-charts';
-
-import { PyramidData } from '../../data/dummy';
-import { useStateContext } from '../../contexts/ContextProvider';
-import { ChartsHeader } from '../../components';
->>>>>>> 713b6fe66fec97a92af6869964a966e5673cceeb
 
 const Pyramid = () => {
   const { currentMode } = useStateContext();
@@ -33,7 +24,6 @@ const Pyramid = () => {
       <div className="w-full">
         <AccumulationChartComponent
           id="pyramid-chart"
-<<<<<<< HEAD
           legendSettings={{ background: "white" }}
           tooltip={{ enable: true }}
           background={currentMode === "Dark" ? "#33373E" : "#fff"}
@@ -47,13 +37,6 @@ const Pyramid = () => {
               AccumulationSelection,
             ]}
           />
-=======
-          legendSettings={{ background: 'white' }}
-          tooltip={{ enable: true }}
-          background={currentMode === 'Dark' ? '#33373E' : '#fff'}
-        >
-          <Inject services={[AccumulationDataLabel, AccumulationTooltip, PyramidSeries, AccumulationLegend, AccumulationSelection]} />
->>>>>>> 713b6fe66fec97a92af6869964a966e5673cceeb
           <AccumulationSeriesCollectionDirective>
             <AccumulationSeriesDirective
               name="Food"
@@ -66,19 +49,11 @@ const Pyramid = () => {
               neckWidth="15%"
               gapRatio={0.03}
               explode
-<<<<<<< HEAD
               emptyPointSettings={{ mode: "Drop", fill: "red" }}
               dataLabel={{
                 visible: true,
                 position: "Inside",
                 name: "text",
-=======
-              emptyPointSettings={{ mode: 'Drop', fill: 'red' }}
-              dataLabel={{
-                visible: true,
-                position: 'Inside',
-                name: 'text',
->>>>>>> 713b6fe66fec97a92af6869964a966e5673cceeb
               }}
             />
           </AccumulationSeriesCollectionDirective>

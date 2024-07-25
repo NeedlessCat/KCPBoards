@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react";
 import {
   ChartComponent,
@@ -19,14 +18,6 @@ import {
 } from "../../data/dummy";
 import { ChartsHeader } from "../../components";
 import { useStateContext } from "../../contexts/ContextProvider";
-=======
-import React from 'react';
-import { ChartComponent, SeriesCollectionDirective, SeriesDirective, Inject, Legend, Category, Tooltip, ColumnSeries, DataLabel } from '@syncfusion/ej2-react-charts';
-
-import { barCustomSeries, barPrimaryXAxis, barPrimaryYAxis } from '../../data/dummy';
-import { ChartsHeader } from '../../components';
-import { useStateContext } from '../../contexts/ContextProvider';
->>>>>>> 713b6fe66fec97a92af6869964a966e5673cceeb
 
 const Bar = () => {
   const { currentMode } = useStateContext();
@@ -41,7 +32,6 @@ const Bar = () => {
           primaryYAxis={barPrimaryYAxis}
           chartArea={{ border: { width: 0 } }}
           tooltip={{ enable: true }}
-<<<<<<< HEAD
           background={currentMode === "Dark" ? "#33373E" : "#fff"}
           legendSettings={{ background: "white" }}
         >
@@ -53,15 +43,6 @@ const Bar = () => {
             {barCustomSeries.map((item, index) => (
               <SeriesDirective key={index} {...item} />
             ))}
-=======
-          background={currentMode === 'Dark' ? '#33373E' : '#fff'}
-          legendSettings={{ background: 'white' }}
-        >
-          <Inject services={[ColumnSeries, Legend, Tooltip, Category, DataLabel]} />
-          <SeriesCollectionDirective>
-            {/* eslint-disable-next-line react/jsx-props-no-spreading */}
-            {barCustomSeries.map((item, index) => <SeriesDirective key={index} {...item} />)}
->>>>>>> 713b6fe66fec97a92af6869964a966e5673cceeb
           </SeriesCollectionDirective>
         </ChartComponent>
       </div>

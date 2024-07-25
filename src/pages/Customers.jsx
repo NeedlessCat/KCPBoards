@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react";
 import {
   GridComponent,
@@ -19,17 +18,6 @@ import { Header } from "../components";
 const Customers = () => {
   const selectionsettings = { persistSelection: true };
   const toolbarOptions = ["Delete"];
-=======
-import React from 'react';
-import { GridComponent, ColumnsDirective, ColumnDirective, Page, Selection, Inject, Edit, Toolbar, Sort, Filter } from '@syncfusion/ej2-react-grids';
-
-import { customersData, customersGrid } from '../data/dummy';
-import { Header } from '../components';
-
-const Customers = () => {
-  const selectionsettings = { persistSelection: true };
-  const toolbarOptions = ['Delete'];
->>>>>>> 713b6fe66fec97a92af6869964a966e5673cceeb
   const editing = { allowDeleting: true, allowEditing: true };
 
   return (
@@ -47,13 +35,9 @@ const Customers = () => {
       >
         <ColumnsDirective>
           {/* eslint-disable-next-line react/jsx-props-no-spreading */}
-<<<<<<< HEAD
           {customersGrid.map((item, index) => (
             <ColumnDirective key={index} {...item} />
           ))}
-=======
-          {customersGrid.map((item, index) => <ColumnDirective key={index} {...item} />)}
->>>>>>> 713b6fe66fec97a92af6869964a966e5673cceeb
         </ColumnsDirective>
         <Inject services={[Page, Selection, Toolbar, Edit, Sort, Filter]} />
       </GridComponent>

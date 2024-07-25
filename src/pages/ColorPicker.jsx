@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react";
 import { ColorPickerComponent } from "@syncfusion/ej2-react-inputs";
 
@@ -19,18 +18,6 @@ const CustomColorPicker = ({ id, mode }) => (
     change={change}
   />
 );
-=======
-import React from 'react';
-import { ColorPickerComponent } from '@syncfusion/ej2-react-inputs';
-
-import { Header } from '../components';
-
-const change = (args) => {
-  document.getElementById('preview').style.backgroundColor = args.currentValue.hex;
-};
-
-const CustomColorPicker = ({ id, mode }) => <ColorPickerComponent id={id} mode={mode} modeSwitcher={false} inline showButtons={false} change={change} />;
->>>>>>> 713b6fe66fec97a92af6869964a966e5673cceeb
 
 const ColorPicker = () => (
   <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">

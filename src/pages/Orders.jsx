@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react";
 import {
   GridComponent,
@@ -17,13 +16,6 @@ import {
 
 import { ordersData, contextMenuItems, ordersGrid } from "../data/dummy";
 import { Header } from "../components";
-=======
-import React from 'react';
-import { GridComponent, ColumnsDirective, ColumnDirective, Resize, Sort, ContextMenu, Filter, Page, ExcelExport, PdfExport, Edit, Inject } from '@syncfusion/ej2-react-grids';
-
-import { ordersData, contextMenuItems, ordersGrid } from '../data/dummy';
-import { Header } from '../components';
->>>>>>> 713b6fe66fec97a92af6869964a966e5673cceeb
 
 const Orders = () => {
   const editing = { allowDeleting: true, allowEditing: true };
@@ -42,7 +34,6 @@ const Orders = () => {
       >
         <ColumnsDirective>
           {/* eslint-disable-next-line react/jsx-props-no-spreading */}
-<<<<<<< HEAD
           {ordersGrid.map((item, index) => (
             <ColumnDirective key={index} {...item} />
           ))}
@@ -59,11 +50,6 @@ const Orders = () => {
             PdfExport,
           ]}
         />
-=======
-          {ordersGrid.map((item, index) => <ColumnDirective key={index} {...item} />)}
-        </ColumnsDirective>
-        <Inject services={[Resize, Sort, ContextMenu, Filter, Page, ExcelExport, Edit, PdfExport]} />
->>>>>>> 713b6fe66fec97a92af6869964a966e5673cceeb
       </GridComponent>
     </div>
   );

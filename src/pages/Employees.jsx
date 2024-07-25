@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react";
 import {
   GridComponent,
@@ -14,16 +13,6 @@ import { Header } from "../components";
 
 const Employees = () => {
   const toolbarOptions = ["Search"];
-=======
-import React from 'react';
-import { GridComponent, Inject, ColumnsDirective, ColumnDirective, Search, Page } from '@syncfusion/ej2-react-grids';
-
-import { employeesData, employeesGrid } from '../data/dummy';
-import { Header } from '../components';
-
-const Employees = () => {
-  const toolbarOptions = ['Search'];
->>>>>>> 713b6fe66fec97a92af6869964a966e5673cceeb
 
   const editing = { allowDeleting: true, allowEditing: true };
 
@@ -41,18 +30,11 @@ const Employees = () => {
       >
         <ColumnsDirective>
           {/* eslint-disable-next-line react/jsx-props-no-spreading */}
-<<<<<<< HEAD
           {employeesGrid.map((item, index) => (
             <ColumnDirective key={index} {...item} />
           ))}
         </ColumnsDirective>
         <Inject services={[Search, Page]} />
-=======
-          {employeesGrid.map((item, index) => <ColumnDirective key={index} {...item} />)}
-        </ColumnsDirective>
-        <Inject services={[Search, Page]} />
-
->>>>>>> 713b6fe66fec97a92af6869964a966e5673cceeb
       </GridComponent>
     </div>
   );

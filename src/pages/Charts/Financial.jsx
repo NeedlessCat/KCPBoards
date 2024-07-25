@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react";
 import {
   ChartComponent,
@@ -22,16 +21,6 @@ import { useStateContext } from "../../contexts/ContextProvider";
 import { ChartsHeader } from "../../components";
 
 const date1 = new Date("2017, 1, 1");
-=======
-import React from 'react';
-import { ChartComponent, SeriesCollectionDirective, SeriesDirective, Inject, HiloSeries, Tooltip, DateTime, Zoom, Logarithmic, Crosshair } from '@syncfusion/ej2-react-charts';
-
-import { financialChartData, FinancialPrimaryXAxis, FinancialPrimaryYAxis } from '../../data/dummy';
-import { useStateContext } from '../../contexts/ContextProvider';
-import { ChartsHeader } from '../../components';
-
-const date1 = new Date('2017, 1, 1');
->>>>>>> 713b6fe66fec97a92af6869964a966e5673cceeb
 
 // eslint-disable-next-line consistent-return
 function filterValue(value) {
@@ -55,7 +44,6 @@ const Financial = () => {
           primaryYAxis={FinancialPrimaryYAxis}
           chartArea={{ border: { width: 0 } }}
           tooltip={{ enable: true, shared: true }}
-<<<<<<< HEAD
           crosshair={{ enable: true, lineType: "Vertical", line: { width: 0 } }}
           background={currentMode === "Dark" ? "#33373E" : "#fff"}
         >
@@ -69,12 +57,6 @@ const Financial = () => {
               Zoom,
             ]}
           />
-=======
-          crosshair={{ enable: true, lineType: 'Vertical', line: { width: 0 } }}
-          background={currentMode === 'Dark' ? '#33373E' : '#fff'}
-        >
-          <Inject services={[HiloSeries, Tooltip, DateTime, Logarithmic, Crosshair, Zoom]} />
->>>>>>> 713b6fe66fec97a92af6869964a966e5673cceeb
           <SeriesCollectionDirective>
             <SeriesDirective
               dataSource={returnValue}
